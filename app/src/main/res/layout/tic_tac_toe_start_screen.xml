@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple">
+
+    <TextView
+        android:id="@+id/wordleHeading2"
+        android:layout_width="371dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:fontFamily="@font/pressstart_2p"
+        android:inputType="text"
+        android:text="@string/tic_tac_toe"
+        android:textAlignment="center"
+        android:textColor="#F8F3F3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <Button
+        android:id="@+id/t_home_button"
+        android:layout_width="211dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="@font/pressstart_2p"
+        android:paddingTop="15dp"
+        android:text="@string/home"
+        android:textSize="20dp"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/initializeButton"
+        android:layout_width="309dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/pressstart_2p"
+        android:paddingTop="15dp"
+        android:text="@string/start"
+        android:textSize="22sp"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/t_home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="203dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"
+        app:srcCompat="@drawable/tictactoe" />
+
+    <TextView
+        android:id="@+id/areyouready"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:fontFamily="@font/pressstart_2p"
+        android:inputType="text"
+        android:text="@string/ready"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/initializeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.562" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

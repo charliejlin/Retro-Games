@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".wordleGame">
+
+    <!-- Keyboard GridLayout -->
+
+    <TextView
+        android:id="@+id/wordleHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="@font/pressstart_2p"
+        android:inputType="text"
+        android:text="@string/wordle"
+        android:textAlignment="center"
+        android:textColor="#150101"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toMainActivity"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/pressstart_2p"
+        android:text="@string/home"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/wd_restart_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="@font/pressstart_2p"
+        android:text="@string/restart"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="390dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:columnCount="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/letterGrid"
+        app:layout_constraintVertical_bias="0.828"
+        app:rowCount="7">
+
+
+        <Button
+            android:id="@+id/buttonQ"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/q"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonW"
+            android:layout_width="65dp"
+            android:text="@string/w"
+            app:backgroundTint="@color/black"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/buttonE"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/e"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonR"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/r"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonT"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/t"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonY"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/y"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/a"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonS"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/s"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/d"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonF"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/f"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonG"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/g"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonH"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/h"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonJ"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/j"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonK"
+            android:layout_width="65dp"
+            android:text="@string/k"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonU"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/u"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonI"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/i"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonO"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/o"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonP"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/p"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonZ"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/z"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonX"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/x"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/c"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonV"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/v"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/b"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonL"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/l"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonN"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/n"
+            app:backgroundTint="@color/black"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/buttonM"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="@string/m"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/empty3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:backgroundTint="@color/yellow" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/letterGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        app:columnCount="5"
+        app:layout_constraintBottom_toTopOf="@id/toMainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wordleHeading"
+        app:layout_constraintVertical_bias="0.035"
+        app:rowCount="6">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/a"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/a" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/a" />
+
+        <!-- Row 2 -->
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/a"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/a" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/b"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!-- Row 3 -->
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/b" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/b" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/b" />
+
+        <!-- Row 4 -->
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/b" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/c" />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/c" />
+
+        <!-- Row 5 -->
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/c" />
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/c" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/c"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/d" />
+
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/d" />
+
+        <EditText
+            android:id="@+id/editText18"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/d" />
+
+        <!-- Row 2 -->
+        <EditText
+            android:id="@+id/editText19"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/d"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editText20"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/d" />
+
+        <EditText
+            android:id="@+id/editText21"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/e" />
+
+        <!-- Row 3 -->
+        <EditText
+            android:id="@+id/editText22"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/e" />
+
+        <EditText
+            android:id="@+id/editText23"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/e" />
+
+        <EditText
+            android:id="@+id/editText24"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/e" />
+
+        <!-- Row 4 -->
+        <EditText
+            android:id="@+id/editText25"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/e" />
+
+        <EditText
+            android:id="@+id/editText26"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/f" />
+
+        <EditText
+            android:id="@+id/editText27"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/f"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!-- Row 5 -->
+        <EditText
+            android:id="@+id/editText28"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/f" />
+
+        <EditText
+            android:id="@+id/editText29"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/f" />
+
+        <EditText
+            android:id="@+id/editText30"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/f" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="510dp"
+        android:text="@string/enter"
+        android:textSize="20dp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="510dp"
+        android:text="@string/delete"
+        android:textSize="20dp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete">
+
+        <include
+            android:id="@+id/cell1"
+            layout="@layout/player_data" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordleInitialScreen"
+    android:background="@color/yellow">
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/pressstart_2p"
+        android:paddingTop="15sp"
+        android:text="@string/continue_to_game"
+        android:textSize="16sp"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/pressstart_2p"
+        android:paddingTop="15sp"
+        android:text="@string/home"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/wordlePLayerName"
+        android:layout_width="326dp"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/pressstart_2p"
+        android:hint="@string/player_name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#190101"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="355dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="28dp"
+        android:checkedButton="@id/foxButton"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676">
+
+        <RadioButton
+            android:id="@+id/foxButton"
+            android:layout_width="92dp"
+            android:layout_height="107dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/fox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <RadioButton
+            android:id="@+id/pandaButton"
+            android:layout_width="91dp"
+            android:layout_height="117dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/panda"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="392dp" />
+
+        <RadioButton
+            android:id="@+id/turtleButton"
+            android:layout_width="96dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/turtle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="404dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/wordleHeading2"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:fontFamily="@font/pressstart_2p"
+        android:inputType="text"
+        android:text="@string/wordle"
+        android:textAlignment="center"
+        android:textColor="#040000"
+        android:textSize="34sp"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <TextView
+        android:id="@+id/characterselecttext"
+        android:layout_width="380dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:fontFamily="@font/pressstart_2p"
+        android:inputType="text"
+        android:text="@string/choose_a_character"
+        android:textAlignment="center"
+        android:textColor="#050000"
+        android:textSize="21sp"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

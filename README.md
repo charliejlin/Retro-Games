@@ -11,7 +11,7 @@ This Android Studio app is built using Java and is designed to [briefly describe
 
 ## Screenshots
 
-![Home Screen](/github_ss/home_screen.png)
+![Home Screen](/github_ss/home_screen.png =250x250)
 ![Screenshot 2](screenshots/screenshot2.png)
 <!-- Add more screenshots as needed -->
 

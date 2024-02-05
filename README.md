@@ -11,7 +11,7 @@ This Android Studio app is built using Java and is designed to [briefly describe
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](home_screen.png)
 ![Screenshot 2](screenshots/screenshot2.png)
 <!-- Add more screenshots as needed -->
 

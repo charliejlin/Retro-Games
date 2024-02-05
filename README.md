@@ -16,7 +16,7 @@ This Android Studio app is built using Java and is designed to emulate classic g
 <p>Blackjack Home Screen</p>
 <img src=/github_ss/bj_home.png style="width:250px">
 
-<p>Tic-Tac-Tow Home Screen</p>
+<p>Tic-Tac-Toe Home Screen</p>
 <img src=/github_ss/ttt_home.png style="width:250px">
 
 <p>Wordle Home Screen</p>

@@ -1,19 +1,38 @@
 ## Overview
 
-This Android Studio app is built using Java and is designed to [briefly describe the main purpose or features of your app].
+This Android Studio app is built using Java and is designed to emulate classic games for Android OS. This was worked on for a class project in a team of 6.
 
 ## Features
 
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-- ...
+- Blackjack
+- Tic-Tac-Toe
+- Wordle
 
 ## Screenshots
 
 <img src=/github_ss/home_screen.png style="width:250px">
-![Screenshot 2](screenshots/screenshot2.png)
-<!-- Add more screenshots as needed -->
+<p>Home Screen</p>
+
+<img src=/github_ss/bj_home.png style="width:250px">
+<p>Blackjack Home Screen</p>
+
+<img src=/github_ss/ttt_home.png style="width:250px">
+<p>Tic-Tac-Tow Home Screen</p>
+
+<img src=/github_ss/wd_home.png style="width:250px">
+<p>Wordle Home Screen</p>
+
+<img src=/github_ss/player_screen.png style="width:250px">
+<p>Player Select Screen</p>
+
+<img src=/github_ss/bj_game.png style="width:250px">
+<p>Blackjack Game Screen</p>
+
+<img src=/github_ss/ttt_game.png style="width:250px">
+<p>Tic-Tac-Toe Game Screen</p>
+
+<img src=/github_ss/wd_game.png style="width:250px">
+<p>Wordle Game Screen</p>
 
 ## Getting Started
 

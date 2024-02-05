@@ -11,7 +11,7 @@ This Android Studio app is built using Java and is designed to [briefly describe
 
 ## Screenshots
 
-![Screenshot 1](home_screen.png)
+![Home Screen](https://github.com/charliejlin/Retro-Games/tree/master/github_ss#:~:text=1%20minute%20ago-,home_screen.png,-added%20github%20ss)
 ![Screenshot 2](screenshots/screenshot2.png)
 <!-- Add more screenshots as needed -->
 

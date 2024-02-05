@@ -10,29 +10,30 @@ This Android Studio app is built using Java and is designed to emulate classic g
 
 ## Screenshots
 
-<img src=/github_ss/home_screen.png style="width:250px">
 <p>Home Screen</p>
+<img src=/github_ss/home_screen.png style="width:250px">
 
-<img src=/github_ss/bj_home.png style="width:250px">
 <p>Blackjack Home Screen</p>
+<img src=/github_ss/bj_home.png style="width:250px">
 
-<img src=/github_ss/ttt_home.png style="width:250px">
 <p>Tic-Tac-Tow Home Screen</p>
+<img src=/github_ss/ttt_home.png style="width:250px">
 
-<img src=/github_ss/wd_home.png style="width:250px">
 <p>Wordle Home Screen</p>
+<img src=/github_ss/wd_home.png style="width:250px">
 
-<img src=/github_ss/player_screen.png style="width:250px">
 <p>Player Select Screen</p>
+<img src=/github_ss/player_screen.png style="width:250px">
 
-<img src=/github_ss/bj_game.png style="width:250px">
 <p>Blackjack Game Screen</p>
+<img src=/github_ss/bj_game.png style="width:250px">
 
-<img src=/github_ss/ttt_game.png style="width:250px">
 <p>Tic-Tac-Toe Game Screen</p>
+<img src=/github_ss/ttt_game.png style="width:250px">
 
-<img src=/github_ss/wd_game.png style="width:250px">
 <p>Wordle Game Screen</p>
+<img src=/github_ss/wd_game.png style="width:250px">
+
 
 ## Getting Started
 
